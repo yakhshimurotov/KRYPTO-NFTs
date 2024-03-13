@@ -51,6 +51,10 @@ navbar {
     justify-content: space-between;
 }
 
+.burger {
+    display: none;
+}
+
 navbar h1 {
     cursor: pointer;
     color: #E5E5E5;
@@ -243,7 +247,7 @@ main {
   .cards ul {
     display: flex;
     justify-content: space-around;
-    list-style: none;;
+    list-style: none;
   }
 
   .cards li {
