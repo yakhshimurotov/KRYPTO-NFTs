@@ -1,7 +1,7 @@
 @media screen and (max-width: 750px) { 
-    * {
-        width: 100%;
-    }
+
+   /* navbar start */
+   
     header, 
     section,
     footer {
@@ -11,102 +11,93 @@
         height: 100%;
         padding: 10px;
     }
+   .nav a {
+        display: none;
+        margin: auto;
+   }
+   navbar {
+        margin-top: 2em;
+        justify-content: space-between;
+   }
+   navbar h1 {
+        font-weight: 300;
+        margin-left: 1em;
+   }
+   .burger {
+        display: block;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 7em;
+        padding: 5px;
+   }
+   .burger div {
+        height: 5px;
+        width: 30px;
+        border-radius: 10px;
+        margin: 3px;
+        background-color: #ededed;
+        transition: all 0.3s ease;
+   }
+     /* navbar end */
 
-    .section_2, .cards ul {
+     /* box1 start */
+   main {
+        margin-top: 5em;
         flex-direction: column;
-    }
-    .section_1 {
-        gap: 2px;
-    }
+        align-items: center;
+        justify-content: none;
+   }
+   .left_1 h1 {
+       line-height: normal;
+       width: 350px;
+       font-size: 70px;
+       margin: 0 auto; 
+       text-align: center;
+   }
+   .left_1 p {
+       margin-top: 1em;
+       width: auto;
+       text-align: center;
+   }
+   .right_1 img {
+       width: 100%;
+       margin-top: 1em;
+   }
+   .click_1 {
+       gap: 15px;
+       justify-content: center;
+       align-items: center;
+       margin-top: 2em;
+   }
+   .click_1 a {
+       font-size: 13px;
+       padding: 20px;
+       width: 160px;
+   }
+     /* box1 end */
 
-  main, navabr {
-    display: flex;
-    flex-direction: column;
-  }
+     /* box2 start */
+   .section_1 h3 {
+       text-align: center;
+   }
+   .logos {
+       flex-direction: column;
+   }
 
-  .nav a {
-    display: none;
-  }
-
-  .right_1 img {
-    width: 300px;
-}
-
-  .left_1 h1 {
-    font-size: 25px;
-  }
-
-  .left_1 p {
-    font-size: 15px;
-  }
-
-  .click_1 {
-    gap: 10px;
-  }
-
-  .click_1 a {
-    text-align: center;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 10px;
-    letter-spacing: 4px;
-    padding: 15px;
-    width: 130px;
-    color: #fff;
-    cursor: pointer;
-}
-
-  .logos {
-    margin: 0 auto;
-    width: 350px;
-    height: 300px;
-    flex-direction: column;
-  }
-
-  .logos img {
-    width: 100px;
-  }
-
-  .left_2 img {
-    width: 229px;
- }
-
- .right h1 {
-    font-size: 15px;
- }
-
- .right p {
-    font-size: 15px;
-    width: 100%;
- }
-
- section .title h4 {
-    font-size: 10px;
- }
-
- .cards li {
-    width: 350px;
-    margin: 0 auto;
-    height: 250px;
- }
- .cards li img {
-    width: 130px;
- }
- .box_3 {
-    margin-top: 0px;
-    height: 100%;
-  }
-
- section .title h1 {
-    font-size: 20px;
-    width: 100%;
-  }
-
-  section .get button {
-    width: 100%;
-  }
-
-  footer {
-    flex-direction: column;
-  }
+   .section_2 {
+       flex-direction: column;
+       gap: 10px;
+   }
+   .box_3 {
+          
+   }
+   .left_2 img {
+       width: 250px;
+   }
+   .right {
+       margin: auto;
+   }
+   .right h1 {
+       font-size: 30px;
+   }
 }
