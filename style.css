@@ -23,13 +23,14 @@ body {
 
 ::-webkit-scrollbar {
     width: 3px;
+    height: 2px;
 }
 ::-webkit-scrollbar-track {
     background-color: #010922;
 }
 ::-webkit-scrollbar-thumb {
     background: #e5e5e5;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 header, 

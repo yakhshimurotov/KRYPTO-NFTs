@@ -16,19 +16,21 @@
    }
    navbar {
         margin-top: 2em;
-        background-color: #000000ad;
         padding: 20px;
-        border-radius: 15px;
    }
    navbar h1 {
         font-weight: 300;
    }
    .burger {
+        position: fixed;
+        background-color: #ededed2c;
+        right: 25px;
+        z-index: 99;
         display: block;
         border-radius: 10px;
         cursor: pointer;
         margin-left: 7em;
-        padding: 5px;
+        padding: 10px;
    }
    .burger div {
         height: 5px;
@@ -107,8 +109,8 @@
        align-items: center;
    }
    .right h1 {
-       font-size: 30px;
-       width: 270px;
+       font-size: 40px;
+       width: 350px;
    }
    .right p {
        width: 350px;
@@ -132,15 +134,27 @@
        justify-content: center;
    }
    .icon i {
-       display: inline;
+       display: inline-block;
        text-align: center;
        font-size: 30px;
        margin-bottom: 20px;
        color: #ededed5a;
+       animation: icon 3s infinite;
+   }
+   @keyframes icon {
+    0% {
+       color:#ededed5a;
+    }
+    50% {
+       color: #fff;
+    }
+    100% {
+        color:#ededed5a;
+    }
    }
    .cards ul {
        scroll-behavior: smooth;
-       padding: 4em 1em 4em;
+       padding: 4em 1em 2em;
        overflow-x: scroll;
        flex-direction: row;
        justify-content: start;
@@ -157,8 +171,51 @@
    ul li .comment {
        bottom: 3em;
    }
-
+    /* box4 end */
+    
+    /* box5 start */
    section .get {
-       margin-top: 0;
+       margin: 3em 1em 1em;
+       height: 350px;
+   }
+   section .get h5 {
+       font-size: 15px;
+   }
+   section .get h1 {
+       width: 320px;
+       font-size: 35px;
+   }
+   section .get button {
+       width: 80%;
+   }
+   section .get button a {
+       font-size: 15px;
+   }
+    /* box5 end */
+
+   footer {
+       flex-direction: column;
+       align-items: center;
+       margin-top: 2em;
+   }
+   footer
+   .foo ul {
+       display: flex;
+       margin-top: 1em;
+   }
+   .foo li .active {
+       position: static;
+   }
+   .foo li {
+       margin: 10px;
+       font-size: 15px;
+   }
+   .input_btn {
+       margin: 15px 0 6em;
+      
+   }
+   .foo h3 {
+       margin-top: 2em;
+       text-align: center;
    }
 }
